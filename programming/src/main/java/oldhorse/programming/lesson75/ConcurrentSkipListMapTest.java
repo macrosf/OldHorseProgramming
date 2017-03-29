@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentSkipListMap;
 
-public class ConcurrentHashMap {
+public class ConcurrentSkipListMapTest {
 	public static void main(String[] args){
 		Map<String, String> map = new ConcurrentSkipListMap<String, String>(
 				Collections.reverseOrder());
