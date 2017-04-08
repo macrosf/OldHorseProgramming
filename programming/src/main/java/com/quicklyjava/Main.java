@@ -15,8 +15,8 @@ public class Main {
 			BufferedReader reader = new BufferedReader(in);
 			System.out.println("Enter Class Name: ");
 			String whatClass = reader.readLine();
-			Class exampleClass = Class.forName(whatClass);
-			Object ob = exampleClass.newInstance();
+			Class<?> exampleClass = Class.forName(whatClass);
+			exampleClass.newInstance();
 	 	} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
