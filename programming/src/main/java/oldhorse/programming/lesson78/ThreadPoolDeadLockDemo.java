@@ -8,6 +8,7 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+@SuppressWarnings("unused")
 public class ThreadPoolDeadLockDemo {
 
 	private static final int THREAD_NUM = 5;
