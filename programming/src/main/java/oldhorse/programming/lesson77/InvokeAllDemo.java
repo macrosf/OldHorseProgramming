@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
@@ -37,7 +36,8 @@ public class InvokeAllDemo {
 	}// end of class UrlTitleParser
 	
 	public static void main(String[] args){
-		ExecutorService executor = Executors.newFixedThreadPool(10);
+		//ExecutorService executor = Executors.newFixedThreadPool(10);
+		ExecutorService executor = new SimpleExecutorService();
         String url1 = "http://www.cnblogs.com/swiftma/p/5396551.html";
         String url2 = "http://www.cnblogs.com/swiftma/p/5399315.html";
         Collection<UrlTitleParser> tasks = Arrays.asList(
