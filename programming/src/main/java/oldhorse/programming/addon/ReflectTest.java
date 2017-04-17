@@ -53,7 +53,7 @@ public class ReflectTest {
 					method.getName(),
 					sb.toString()
 					));
-			method.getModifiers();
+			//method.getModifiers();
 			//Modifier
 		}
 		

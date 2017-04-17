@@ -16,7 +16,9 @@ public class Main {
 			System.out.println("Enter Class Name: ");
 			String whatClass = reader.readLine();
 			Class<?> exampleClass = Class.forName(whatClass);
-			exampleClass.newInstance();
+
+			@SuppressWarnings("unused")
+			Object ob = exampleClass.newInstance();
 	 	} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
